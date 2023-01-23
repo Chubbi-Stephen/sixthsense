@@ -4107,6 +4107,19 @@ input, select, textarea {
 	/* Services */
 
 	#services{
-		width: 350px;
-		height: 340px;
+		height: 270px;
+		transition: all .4s;
+	}
+	#services:hover{
+		transform: scale(105%);
+	}
+
+	/* Reviews */
+	#reviews{
+		height: 370px;
+	    transition: all .4s;
+
+	}
+	#reviews:hover{
+		transform: scale(105%);
 	}
