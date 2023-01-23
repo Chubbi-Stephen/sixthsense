@@ -4108,7 +4108,7 @@ input, select, textarea {
 
 	#services{
 		height: 270px;
-		transition: all .4s;
+		transition: all .35s;
 	}
 	#services:hover{
 		transform: scale(105%);
@@ -4117,7 +4117,7 @@ input, select, textarea {
 	/* Reviews */
 	#reviews{
 		height: 370px;
-	    transition: all .4s;
+	    transition: all .35s;
 
 	}
 	#reviews:hover{
