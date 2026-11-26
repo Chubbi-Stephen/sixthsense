@@ -1,267 +1,639 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Sixthsense Music</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SixthSenseMusic — Private Recording, Production &amp; Mastering House</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="description"
+      content="SixthSenseMusic is a boutique recording, production, mixing, and mastering house founded by OhMyJosh. Distractions off. Focus on."
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/studio.css" />
   </head>
-  <body class="is-preload landing">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header">
-        <h1 id="logo"><a href="index.html">SixthSenseMusic</a></h1>
-        <nav id="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+  <body>
+    <!-- Architectural Header -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="brand" aria-label="SixthSenseMusic Home">
+          <svg class="brand__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="4" fill="#121216" stroke="rgba(242,239,233,0.16)" />
+            <g stroke="#C8A26A" stroke-width="1.6" stroke-linecap="round">
+              <line x1="12" y1="18" x2="52" y2="18" />
+              <line x1="12" y1="25" x2="52" y2="25" />
+              <line x1="12" y1="32" x2="52" y2="32" />
+              <line x1="12" y1="39" x2="52" y2="39" />
+              <line x1="12" y1="46" x2="52" y2="46" />
+            </g>
+            <ellipse cx="24" cy="39" rx="4.2" ry="3.1" transform="rotate(-18 24 39)" fill="#EFECE6" />
+            <path d="M27.6 38V21L41 18.5V35.5" stroke="#EFECE6" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+            <ellipse cx="37.2" cy="36" rx="4.2" ry="3.1" transform="rotate(-18 37.2 36)" fill="#EFECE6" />
+          </svg>
+          <span class="brand__text">
+            <span class="brand__name">SixthSense</span>
+            <span class="brand__sub">Recording House</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary Navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link is-active">Overview</a></li>
+            <li><a href="studios.html" class="nav__link">Studios &amp; Gear</a></li>
+            <li><a href="services.html" class="nav__link">Services</a></li>
+            <li><a href="catalogue.html" class="nav__link">Catalogue</a></li>
+            <li><a href="about.html" class="nav__link">The House</a></li>
           </ul>
         </nav>
-      </header>
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="content">
-          <header>
-            <h2>
-              Distractions Off. <br />
-              Focus On.
-            </h2>
-            <p>Go beyond music. Immerse your sixth senses through vibration.</p>
-          </header>
-          <span class="image"><img src="images/logo.png" alt="" /></span>
+        <div style="display: flex; align-items: center; gap: 0.9rem;">
+          <span class="header-status" title="Studio Booking Desk Open">
+            <span class="cue-dot" aria-hidden="true"></span>
+            Studio A · Open
+          </span>
+          <a href="book.html" class="btn btn--primary" style="padding: 0.65rem 1.15rem;">Book Session</a>
+          <button class="nav-toggle" type="button" aria-label="Toggle Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <a href="#one" class="goto-next scrolly">Next</a>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-drawer__links">
+        <li><a href="index.html">Overview <span>01</span></a></li>
+        <li><a href="studios.html">Studios &amp; Gear <span>02</span></a></li>
+        <li><a href="services.html">Services &amp; Estimator <span>03</span></a></li>
+        <li><a href="catalogue.html">Catalogue <span>04</span></a></li>
+        <li><a href="about.html">The House <span>05</span></a></li>
+        <li><a href="book.html">Book Session <span>06</span></a></li>
+      </ul>
+      <div class="mono-meta">
+        SixthSenseMusic · Lagos, Nigeria · joshrexly@gmail.com
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__media">
+          <img
+            src="images/piano.jpg"
+            alt="Reference headphones resting across grand keys inside SixthSenseMusic"
+          />
+          <div class="hero__scrim"></div>
+        </div>
+
+        <div class="container hero__inner">
+          <div>
+            <p class="eyebrow">SixthSenseMusic · Est. by OhMyJosh</p>
+            <h1 class="display-xl hero__title">
+              Distractions Off.<br />
+              <em>Focus On.</em>
+            </h1>
+            <p class="lead">
+              A private recording, arrangement, and mastering house built for signed artists and discerning independent voices. Go beyond sound—immerse your sixth sense through vibration.
+            </p>
+            <div class="hero__actions">
+              <a href="book.html" class="btn btn--primary">
+                Reserve Studio Time
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+              <a href="studios.html" class="btn btn--ghost">Explore Rooms &amp; Gear</a>
+            </div>
+          </div>
+
+          <aside class="hero__spec-card" aria-label="House Technical Profile">
+            <span class="eyebrow">House Architecture</span>
+            <div class="spec-row">
+              <span class="spec-row__k">Conversion</span>
+              <span class="spec-row__v">96 kHz / 24-bit</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-row__k">Monitoring</span>
+              <span class="spec-row__v">Focal · Erzetich Ref.</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-row__k">Direction</span>
+              <span class="spec-row__v">OhMyJosh (Since 2004)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-row__k">Location</span>
+              <span class="spec-row__v">Nigeria · Private Lockout</span>
+            </div>
+          </aside>
+        </div>
       </section>
 
-      <!-- One -->
-      <section id="one" class="spotlight style1 bottom">
-        <span class="image fit main"
-          ><img src="images/piano.jpg" alt=""
-        /></span>
-        <div class="content">
-          <div class="container">
-            <div class="row">
-              <div class="col-4 col-12-medium">
-                <header>
-                  <h2>Empowering Colorful Music</h2>
-                  <p>
-                    We love empowering people to produce spectacular music. From
-                    enquiry through to recording, the SixthSemseMusic family will
-                    seamlessly create and deliver a music experience to exceed
-                    all expectations.
-                  </p>
-                </header>
+      <!-- 01 / Philosophy -->
+      <section class="section">
+        <div class="container split-editorial">
+          <div class="frame frame--portrait" data-reveal>
+            <img
+              src="images/studio.jpg"
+              alt="Control desk inside SixthSenseMusic showing Focal studio monitors, MIDI controller, and Apollo interface"
+            />
+            <div class="frame__caption">
+              <span>Control Desk · Studio B</span>
+              <span>Production &amp; Vocal Suite</span>
+            </div>
+          </div>
+
+          <div data-reveal>
+            <span class="eyebrow">01 / Philosophy</span>
+            <h2 class="display-lg" style="margin-top: 0.75rem; margin-bottom: 1.25rem;">
+              Great artists still make their best music in <em>deliberate spaces.</em>
+            </h2>
+            <p class="lead">
+              From initial arrangement through final master, SixthSenseMusic pairs acoustic stillness with Nigeria’s leading producers, session instrumentalists, and mix engineers.
+            </p>
+            <p style="color: var(--text-muted); margin-top: 1rem;">
+              Whether you are stepping behind a condenser for your debut single or sculpting an ensemble record, every session is guided with unhurried precision so the harmonic color of your record translates on every system.
+            </p>
+
+            <div class="pillars">
+              <div>
+                <h3 class="pillar__title">Protected Creative Focus</h3>
+                <p class="pillar__desc">
+                  Private block lockouts designed to keep external noise out and vocal performance unhurried.
+                </p>
               </div>
-              <div class="col-4 col-12-medium">
-                <p>
-                  We love working alongside artistes to plan all manner of
-                  events. Whether this is your first time recording a song or
-                  not, sixthsense will guide you through a seamless process to
-                  create the perfect harmonic color for your music.
+              <div>
+                <h3 class="pillar__title">Live Musicality First</h3>
+                <p class="pillar__desc">
+                  Access to top-tier session pianists, drummers, bassists, and vocal arrangers under one roof.
+                </p>
+              </div>
+              <div>
+                <h3 class="pillar__title">End-to-End Continuity</h3>
+                <p class="pillar__desc">
+                  Seamless handoff from beat architecture and tracking into analog-hybrid mixing and mastering.
+                </p>
+              </div>
+              <div>
+                <h3 class="pillar__title">Release-Ready Standards</h3>
+                <p class="pillar__desc">
+                  Calibrated loudness, phase coherence, and full stem deliverables for labels and global DSPs.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <a href="#two" class="goto-next scrolly">Next</a>
       </section>
 
-      <!-- Two -->
-      <section id="two" class="spotlight style2 right">
-        <span class="image fit main"
-          ><img src="images/studio-2.jpg" alt=""
-        /></span>
-        <div class="content">
-          <header>
-            <h2>
-              SixthSenseMusic is on a mission to inspire with beyond the ordinary
-              sports, culture and lifestyle entertainment.
-            </h2>
-          </header>
-          <p>
-            SixthSenseMusic empowers artistes to deliver an exceptional sound
-            by delighting their guests with unforgettable music. Our mission is
-            simple: to help you create and deliver a trilling and melodious
-            sound.
-          </p>
-        </div>
-        <a href="#three" class="goto-next scrolly">Next</a>
-      </section>
-
-      <!-- Three -->
-      <!-- <section id="three" class="spotlight style3 left">
-        <span class="image fit main bottom"
-          ><img src="images/pic04.jpg" alt=""
-        /></span>
-        <div class="content">
-          <header>
-            <h2>Interdum felis blandit praesent sed augue</h2>
-            <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-          </header>
-          <p>
-            Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor
-            enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep
-            aliquet augue varius tempus lobortis porttitor lorem et accumsan
-            consequat adipiscing lorem.
-          </p>
-          <ul class="actions">
-            <li><a href="#" class="button">Learn More</a></li>
-          </ul>
-        </div>
-        <a href="#four" class="goto-next scrolly">Next</a>
-      </section> -->
-
-      <!-- Services -->
-      <section id="three" class="wrapper style1 special fade-up">
+      <!-- 02 / Disciplines (Warm Ivory Editorial Contrast) -->
+      <section class="section section--ivory">
         <div class="container">
-          <header class="major">
-            <h2>Services</h2>
-            <p>Some of our latest releases</p>
-          </header>
-          <div class="box alt">
-            <div class="row gtr-uniform">
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="image fit main" id="services"
-                  ><img src="images/never.jpg" alt=""
-                /></span>
-                <h3>
-                  Never Too Late -
-                  <small style="font-size: 11px; color: #e44c65"
-                    >PRODUCED BY CHUBBI</small
-                  >
-                </h3>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="image fit main" id="services"
-                  ><img src="images/dreams.jpg" alt=""
-                /></span>
-                <h3>
-                  Dreams Come Alive -
-                  <small style="font-size: 11px; color: #e44c65"
-                    >PRODUCED BY CHUBBI</small
-                  >
-                </h3>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="image fit main" id="services"
-                  ><img src="images/chika.jpg" alt=""
-                /></span>
-                <h3>
-                  It's Your Worship -
-                  <small style="font-size: 11px; color: #e44c65"
-                    >PRODUCED BY OHMYJOSH</small
-                  >
-                </h3>
-              </section>
-              <section class="col-4 col-6-medium col-12-xsmall">
-                <span class="image fit main" id="services"
-                  ><img src="images/changed.jpg" alt=""
-                /></span>
-                <h3>
-                  Changed -
-                  <small style="font-size: 11px; color: #e44c65"
-                    >PRODUCED BY OHMYJOSH</small
-                  >
-                </h3>
-              </section>
+          <div class="section-head" data-reveal>
+            <div class="section-head__left">
+              <span class="eyebrow">02 / Disciplines</span>
+              <h2 class="display-lg">Four core pillars of <em>sonic craft.</em></h2>
+            </div>
+            <a href="services.html" class="btn btn--dark-outline">
+              Estimate Your Project
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="service-list" data-reveal>
+            <a href="services.html#tracking" class="service-row">
+              <span class="service-row__num">01</span>
+              <h3 class="service-row__name">Vocal &amp; Live Tracking</h3>
+              <p class="service-row__desc">
+                Isolated booth capture, dedicated tracking engineer, vocal comping, and real-time headphone cue mixes.
+              </p>
+              <span class="service-row__rate">From ₦35,000 / hr</span>
+            </a>
+
+            <a href="services.html#production" class="service-row">
+              <span class="service-row__num">02</span>
+              <h3 class="service-row__name">Bespoke Production</h3>
+              <p class="service-row__desc">
+                Custom composition, live keys and rhythm arrangement, harmonic voicing, and full sonic direction.
+              </p>
+              <span class="service-row__rate">From ₦280,000 / track</span>
+            </a>
+
+            <a href="services.html#mixing" class="service-row">
+              <span class="service-row__num">03</span>
+              <h3 class="service-row__name">Analog-Hybrid Mixing</h3>
+              <p class="service-row__desc">
+                Sculptural EQ, bus compression, spatial depth, and full delivery of main, instrumental, and TV stems.
+              </p>
+              <span class="service-row__rate">From ₦140,000 / track</span>
+            </a>
+
+            <a href="services.html#mastering" class="service-row">
+              <span class="service-row__num">04</span>
+              <h3 class="service-row__name">Mastering &amp; Prep</h3>
+              <p class="service-row__desc">
+                Precision dynamic balance, streaming LUFS optimization, ISRC metadata embedding, and sequence cohesion.
+              </p>
+              <span class="service-row__rate">From ₦55,000 / track</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 / Interactive Signal-Chain Reference -->
+      <section class="section rule-bottom">
+        <div class="container">
+          <div class="console-box" data-signal-console data-reveal>
+            <div>
+              <span class="eyebrow">03 / Audition The Chain</span>
+              <h2 class="display-md" style="margin-top: 0.7rem; margin-bottom: 1rem;">
+                Hear the difference between raw capture &amp; <em>finished headroom.</em>
+              </h2>
+              <p style="color: var(--text-muted); margin: 0;">
+                Toggle our interactive Web Audio studio reference generator to audition harmonic warmth, low-end shelf weighting, and bus limiting in real time.
+              </p>
+
+              <div class="console-controls">
+                <button type="button" class="btn btn--brass" data-console-play>
+                  Audition Reference Tone
+                </button>
+                <div class="pill-switch" role="group" aria-label="Signal Chain Mode">
+                  <button type="button" data-console-mode="raw">Bypass</button>
+                  <button type="button" class="is-active" data-console-mode="mastered">Mastered Bus</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="meter-panel" aria-live="polite">
+              <div class="spec-row" style="padding-bottom: 0.55rem;">
+                <span class="spec-row__k">Active Chain</span>
+                <span class="spec-row__v" data-readout-stage>Neve Bus + Tape + Limiter</span>
+              </div>
+
+              <div class="meter-bars" aria-hidden="true">
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+                <span class="meter-bar"></span><span class="meter-bar"></span>
+              </div>
+
+              <div class="meter-readout">
+                <div>
+                  <span class="meter-readout__label">Integrated</span>
+                  <span class="meter-readout__val" data-readout-lufs>-9.4 LUFS</span>
+                </div>
+                <div>
+                  <span class="meter-readout__label">True Peak</span>
+                  <span class="meter-readout__val" data-readout-headroom>-1.0 dBTP</span>
+                </div>
+                <div>
+                  <span class="meter-readout__label">Resolution</span>
+                  <span class="meter-readout__val">24-bit / 96k</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Five -->
-      <section id="five" class="wrapper style2 special fade">
+      <!-- 04 / Rooms Preview -->
+      <section class="section section--elevated rule-bottom">
         <div class="container">
-          <header>
-            <h2>Want To Get Started?</h2>
-          </header>
-          <form method="post" action="#" class="cta">
-            <div class="row gtr-uniform gtr-50">
-              <div class="col-8 col-12-xsmall">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email Address"
-                />
-              </div>
-              <div class="col-4 col-12-xsmall">
-                <input type="submit" value="Get Started" class="fit primary" />
-              </div>
+          <div class="section-head" data-reveal>
+            <div class="section-head__left">
+              <span class="eyebrow">04 / The Rooms</span>
+              <h2 class="display-lg">Engineered for <em>honest translation.</em></h2>
+              <p class="lead">
+                Two purpose-tuned environments equipped for large ensemble tracking, tactile mixing, and critical mastering reference.
+              </p>
             </div>
-          </form>
+            <a href="studios.html" class="text-link">Full Gear Locker &amp; Specs &rarr;</a>
+          </div>
+
+          <div class="rooms-grid">
+            <article class="room-card" data-reveal>
+              <div class="room-card__media">
+                <img src="images/console.jpg" alt="Studio A mixing console faders and channel strips" />
+              </div>
+              <div class="room-card__body">
+                <span class="eyebrow">Room 01 · Main Suite</span>
+                <h3 class="display-md">Studio A — Console &amp; Live Room</h3>
+                <p style="color: var(--text-muted); margin: 0;">
+                  Anchored by hands-on console mixing, multi-channel conversion, and generous acoustic headroom for live drums, brass, choir harmonies, and full band arrangements.
+                </p>
+                <div class="room-specs">
+                  <div>
+                    <span class="room-specs__k">Workflow</span>
+                    <span class="room-specs__v">Console Hybrid</span>
+                  </div>
+                  <div>
+                    <span class="room-specs__k">I/O Capacity</span>
+                    <span class="room-specs__v">32-Ch Simultaneous</span>
+                  </div>
+                  <div>
+                    <span class="room-specs__k">Ideal For</span>
+                    <span class="room-specs__v">Live &amp; Ensemble</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="room-card" data-reveal>
+              <div class="room-card__media">
+                <img src="images/studio-2.jpg" alt="Studio B monitoring desk featuring Erzetich Bacillus headphone amplifier and DAW workstations" />
+              </div>
+              <div class="room-card__body">
+                <span class="eyebrow">Room 02 · Precision Suite</span>
+                <h3 class="display-md">Studio B — Production &amp; Mastering</h3>
+                <p style="color: var(--text-muted); margin: 0;">
+                  An intimate writing, vocal tracking, and critical monitoring suite pairing reference headphone amplification with dual-display arrangement precision.
+                </p>
+                <div class="room-specs">
+                  <div>
+                    <span class="room-specs__k">Monitoring</span>
+                    <span class="room-specs__v">Focal + Erzetich</span>
+                  </div>
+                  <div>
+                    <span class="room-specs__k">Sample Rate</span>
+                    <span class="room-specs__v">Up to 192 kHz</span>
+                  </div>
+                  <div>
+                    <span class="room-specs__k">Ideal For</span>
+                    <span class="room-specs__v">Vocals &amp; Mastering</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="icons">
-          <li>
-            <a
-              href="https://twitter.com/JoshSingz "
-              target="_blank"
-              class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://web.facebook.com/ataobor.joshua"
-              target="_blank"
-              class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/ataobor-joshua-ba35a7255/"
-              target="_blank"
-              class="icon brands fa-linkedin-in"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.instagram.com/thereal_ohmyjosh/?next=%2F"
-              target="_blank"
-              class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://mail.google.com/mail/u/0/?hl=en&tf=cm&fs=1&to=joshrexly@gmail.com"
-              target="_blank"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Sixthsense. All rights reserved.</li>
-          <li>
-            Code:
-            <a href="https://devchubbiportfolio.netlify.app/#"  target="_blank">#DEVCHUBBI</a>
-          </li>
-        </ul>
-      </footer>
+      <!-- 05 / Selected Releases -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div class="section-head__left">
+              <span class="eyebrow">05 / Selected Discography</span>
+              <h2 class="display-lg">Records shaped inside <em>our walls.</em></h2>
+              <p class="lead">
+                Select any release below to inspect complete session credits, instrumentation, and production notes.
+              </p>
+            </div>
+            <a href="catalogue.html" class="text-link">View Full Archive &rarr;</a>
+          </div>
+
+          <div class="release-grid" data-reveal>
+            <button type="button" class="release-card" data-release-id="never-too-late">
+              <div class="release-card__art">
+                <img src="images/never.jpg" alt="Never Too Late cover artwork" />
+              </div>
+              <div class="release-card__body">
+                <span class="release-card__cat">SSM-001 · Single</span>
+                <h3 class="release-card__title">Never Too Late</h3>
+                <span class="release-card__credit">OhMyJosh · Prod. by Chubbi</span>
+              </div>
+            </button>
+
+            <button type="button" class="release-card" data-release-id="dreams-come-alive">
+              <div class="release-card__art">
+                <img src="images/dreams.jpg" alt="Dreams Come Alive cover artwork" />
+              </div>
+              <div class="release-card__body">
+                <span class="release-card__cat">SSM-002 · Single</span>
+                <h3 class="release-card__title">Dreams Come Alive</h3>
+                <span class="release-card__credit">OhMyJosh · Prod. by Chubbi</span>
+              </div>
+            </button>
+
+            <button type="button" class="release-card" data-release-id="its-your-worship">
+              <div class="release-card__art">
+                <img src="images/chika.jpg" alt="It's Your Worship cover artwork" />
+              </div>
+              <div class="release-card__body">
+                <span class="release-card__cat">SSM-003 · Single</span>
+                <h3 class="release-card__title">It's Your Worship</h3>
+                <span class="release-card__credit">Blessed Chika · Prod. by OhMyJosh</span>
+              </div>
+            </button>
+
+            <button type="button" class="release-card" data-release-id="changed">
+              <div class="release-card__art">
+                <img src="images/changed.jpg" alt="Changed by Precious Stones cover artwork" />
+              </div>
+              <div class="release-card__body">
+                <span class="release-card__cat">SSM-004 · Single</span>
+                <h3 class="release-card__title">Changed</h3>
+                <span class="release-card__credit">Precious Stones · Prod. by OhMyJosh</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 / Collaborator Voices (Ivory Band) -->
+      <section class="section section--ivory">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div class="section-head__left">
+              <span class="eyebrow">06 / Voices From The Room</span>
+              <h2 class="display-lg">Trusted by performers, arrangers &amp; <em>recording artists.</em></h2>
+            </div>
+            <a href="about.html" class="text-link">Read About OhMyJosh &rarr;</a>
+          </div>
+
+          <div class="reviews-grid" data-reveal>
+            <article class="review-card">
+              <blockquote class="review-card__quote">
+                “An ultra-professional studio with maximum quality. The producers and engineers are helpful and deeply experienced—the quality of music that comes out of this place speaks for itself.”
+              </blockquote>
+              <div class="review-card__person">
+                <div class="review-card__avatar">
+                  <img src="images/chubbi.png" alt="Portrait of Chubbi Stephen" />
+                </div>
+                <div>
+                  <div class="review-card__name">Chubbi Stephen</div>
+                  <div class="review-card__role">Pianist &amp; Music Producer</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <blockquote class="review-card__quote">
+                “My personal favourite when it comes to serious music recording and live arrangements. I always choose quality over quantity—that is why you work in a studio with sense.”
+              </blockquote>
+              <div class="review-card__person">
+                <div class="review-card__avatar">
+                  <img src="images/jerry.jpg" alt="Portrait of Jeremiah Olagunju" />
+                </div>
+                <div>
+                  <div class="review-card__name">Jeremiah Olagunju</div>
+                  <div class="review-card__role">Pro Recording Drummer &amp; Live Arranger</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <blockquote class="review-card__quote">
+                “SixthSenseMusic studio is a sanctuary where inspirational sounds are born and mood-transforming records are crafted with genuine care.”
+              </blockquote>
+              <div class="review-card__person">
+                <div class="review-card__avatar">
+                  <img src="images/favour.jpg" alt="Portrait of The Favoured" />
+                </div>
+                <div>
+                  <div class="review-card__name">The Favoured</div>
+                  <div class="review-card__role">Recording Artist</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 / Private Booking CTA -->
+      <section class="section">
+        <div class="container cta-band" data-reveal>
+          <div>
+            <span class="eyebrow">07 / Reserve Your Block</span>
+            <h2 class="display-lg" style="margin-top: 0.75rem;">
+              Ready to bring your next <em>record into focus?</em>
+            </h2>
+            <p class="lead" style="margin-top: 1rem; margin-bottom: 0;">
+              Share your demos, schedule a private lockout, or calculate your production scope before stepping into the room.
+            </p>
+          </div>
+
+          <div class="cta-band__actions">
+            <a href="services.html#estimator" class="btn btn--ghost">Open Estimator</a>
+            <a href="book.html" class="btn btn--brass">
+              Book a Session
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Release Dossier Modal -->
+    <div id="release-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-release-title">
+      <div class="modal">
+        <div class="modal__art">
+          <img src="" alt="" data-modal-art />
+        </div>
+        <div class="modal__body">
+          <button type="button" class="modal__close">Close [Esc]</button>
+          <div>
+            <span class="eyebrow" data-modal-cat></span>
+            <h3 id="modal-release-title" class="display-md" data-modal-title style="margin-top: 0.45rem;"></h3>
+            <p class="mono-meta" data-modal-artist style="margin: 0.4rem 0 0;"></p>
+          </div>
+          <p style="color: var(--text-muted); margin: 0;" data-modal-profile></p>
+          <div class="credits-list" data-modal-credits></div>
+          <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+            <a href="book.html" class="btn btn--brass" data-modal-book>Book Similar Sound</a>
+            <a href="catalogue.html" class="btn btn--ghost">Full Catalogue</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand">
+              <svg class="brand__mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="4" fill="#121216" stroke="rgba(242,239,233,0.16)" />
+                <g stroke="#C8A26A" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="12" y1="18" x2="52" y2="18" />
+                  <line x1="12" y1="25" x2="52" y2="25" />
+                  <line x1="12" y1="32" x2="52" y2="32" />
+                  <line x1="12" y1="39" x2="52" y2="39" />
+                  <line x1="12" y1="46" x2="52" y2="46" />
+                </g>
+                <ellipse cx="24" cy="39" rx="4.2" ry="3.1" transform="rotate(-18 24 39)" fill="#EFECE6" />
+                <path d="M27.6 38V21L41 18.5V35.5" stroke="#EFECE6" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+                <ellipse cx="37.2" cy="36" rx="4.2" ry="3.1" transform="rotate(-18 37.2 36)" fill="#EFECE6" />
+              </svg>
+              <span class="brand__text">
+                <span class="brand__name">SixthSense</span>
+                <span class="brand__sub">Recording House</span>
+              </span>
+            </a>
+            <p style="color: var(--text-muted); max-width: 34ch; margin-top: 1.25rem; font-size: 0.92rem;">
+              Private recording, production, mixing, and mastering house founded by OhMyJosh. Distractions off. Focus on.
+            </p>
+            <div class="social-row" style="margin-top: 1.4rem;">
+              <a class="social-icon" href="https://twitter.com/JoshSingz" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon" href="https://www.instagram.com/thereal_ohmyjosh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a class="social-icon" href="https://web.facebook.com/ataobor.joshua" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.6V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1V11H7.5v3h2.8v8h3.2z"/></svg>
+              </a>
+              <a class="social-icon" href="https://www.linkedin.com/in/ataobor-joshua-ba35a7255/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V19.5H6.94V8.5ZM5.25 3.5C4.14 3.5 3.25 4.39 3.25 5.5C3.25 6.6 4.14 7.5 5.25 7.5C6.35 7.5 7.25 6.6 7.25 5.5C7.25 4.39 6.35 3.5 5.25 3.5ZM20.44 13.02C20.44 9.88 18.76 8.22 16.16 8.22C14.37 8.22 13.48 9.2 13.02 9.93V8.5H9.65C9.7 9.48 9.65 19.5 9.65 19.5H13.02V13.36C13.02 13.02 13.05 12.69 13.15 12.45C13.42 11.78 14.03 11.09 15.07 11.09C16.41 11.09 17.06 12.11 17.06 13.6V19.5H20.44V13.02Z"/></svg>
+              </a>
+              <a class="social-icon" href="mailto:joshrexly@gmail.com" aria-label="Email SixthSenseMusic">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Navigation</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Overview</a></li>
+              <li><a href="studios.html">Studios &amp; Gear</a></li>
+              <li><a href="services.html">Services &amp; Rates</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="about.html">The House &amp; OhMyJosh</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Disciplines</h3>
+            <ul class="footer-links">
+              <li><a href="services.html#tracking">Vocal &amp; Live Tracking</a></li>
+              <li><a href="services.html#production">Music Production</a></li>
+              <li><a href="services.html#mixing">Analog-Hybrid Mixing</a></li>
+              <li><a href="services.html#mastering">Mastering &amp; Stems</a></li>
+              <li><a href="services.html#estimator">Project Estimator</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-heading">Booking Desk</h3>
+            <ul class="footer-links">
+              <li><a href="book.html">Reserve a Session</a></li>
+              <li><a href="mailto:joshrexly@gmail.com">joshrexly@gmail.com</a></li>
+              <li><span style="color: var(--text-subtle); font-size: 0.85rem;">Nigeria · By Appointment</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; 2026 SixthSenseMusic. All rights reserved.</span>
+          <span>Studio Direction · OhMyJosh</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/studio.js"></script>
   </body>
 </html>
